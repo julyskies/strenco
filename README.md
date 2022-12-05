@@ -22,7 +22,8 @@ package main
 import "github.com/julyskies/strenco"
 
 func main() {
-  encoded, encodingError := strenco.Encode("Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
+  plaintext := "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  encoded, encodingError := strenco.Encode(plaintext)
   if encodingError != nil {
     println(encodingError.Error())
   } else {
@@ -39,7 +40,8 @@ package main
 import "github.com/julyskies/strenco"
 
 func main() {
-  decoded, decodingError := strenco.Decode(`%%7z;1tsk1JA!NbAFwzj j&{r(3#"+L%m*{<D%Wrh@iyB(qM!eG)>B/ox/%%`)
+  encoded := `%%7z;1tsk1JA!NbAFwzj j&{r(3#"+L%m*{<D%Wrh@iyB(qM!eG)>B/ox/%%`
+  decoded, decodingError := strenco.Decode(encoded)
   if decodingError != nil {
     println(decodingError.Error())
   } else {
