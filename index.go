@@ -5,7 +5,7 @@ import (
 	"math"
 	"strings"
 
-	"strenco/utilities"
+	"github.com/julyskies/strenco/utilities"
 )
 
 func Decode(value string) (string, error) {

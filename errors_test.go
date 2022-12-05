@@ -3,7 +3,7 @@ package strenco
 import (
 	"testing"
 
-	"strenco/utilities"
+	"github.com/julyskies/strenco/utilities"
 )
 
 var INVALID_FORMAT = utilities.WRAP + "isinvalid%"
