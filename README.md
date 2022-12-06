@@ -50,6 +50,10 @@ func main() {
 }
 ```
 
+### Other implementations
+
+- [strenco for Javascript](https://github.com/julyskies/strencojs)
+
 ### Security
 
 This module is not secure, since its main goal is to make the original value unreadable. There are no additional keys, passphrases or secrets required, meaning that anyone can decode encoded value. It is not recommended to store sensitive data encoded with this module.
